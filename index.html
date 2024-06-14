@@ -3,9 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/reset.css">
     <title>Document</title>
 </head>
 <body>
-    <h1>Proyecto M1</h1>
+    <header>
+        <h1>Osvaldo Olmedo - Mi Página</h1>
+    </header>
+    <nav>
+        <a href="#">Navbar</a>
+    </nav>
+    <div class="container">
+        <main>
+            <article>
+                <h2>Sobre mí</h2>
+                <p>Apasionado por el aprendizaje continuo y con la capacidad de desempeñarme eficazmente bajo presión, me encuentro actualmente en el ultimo año de mis estudios en Ingeniería en Sistemas Computacionales, realizados en modalidad a distancia. Complementando mi formación, estoy inmerso en un bootcamp de desarrollo Full Stack, donde estoy enfocado en especializarme en el Back End.
+                    Durante mi participación en este bootcamp, he llevado a cabo varios proyectos que han fortalecido mis habilidades en tecnologías como JavaScript, CSS, HTML5 y Node.js. Además, en la carrera, he desarrollado pequeñas aplicaciones en Java, y durante mi etapa de bachillerato en la carrera técnica, adquirí experiencia con C++ y Java mediante la creación de diversas aplicaciones.</p>
+            </article>
+        </main>
+
+        <aside>
+            <div class="cards-container">
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="assets/js.png" alt="JS-Logo">
+                            <h3>JavaScript</h3>
+                        </div>
+                        <div class="card-back">
+                        <p>Este es el texto que se muestra al voltear la tarjeta.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="assets/python.png" alt="Python-Logo">
+                            <h3>Python</h3>
+                        </div>
+                        <div class="card-back">
+                        <p>Este es el texto que se muestra al voltear la tarjeta.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="assets/css.png" alt="CSS-Logo">
+                            <h3>CSS</h3>
+                        </div>
+                        <div class="card-back">
+                        <p>Este es el texto que se muestra al voltear la tarjeta.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="assets/github.png" alt="GitHub-Logo">
+                            <h3>GitHub</h3>
+                        </div>
+                        <div class="card-back">
+                        <p>Este es el texto que se muestra al voltear la tarjeta.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <div class="form-container">
+            <h2>Crea tu carta</h2>
+            <label for="title">Título:</label>
+            <input type="text" id="title" placeholder="Ingresa el título">
+            
+            <label for="description">Descripción:</label>
+            <input type="text" id="description" placeholder="Ingresa la descripción">
+            
+            <label for="image-url">URL de la imagen:</label>
+            <input type="text" id="image-url" placeholder="Ingresa la URL de la imagen">
+            
+            <button onclick="showResult()">Mostrar Resultado</button>
+        </div>
+        <div class="cards-container-result" id="result-container">
+            
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Osvaldo Olmedo. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>

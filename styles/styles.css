@@ -1,0 +1,229 @@
+/* Estilo generale */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5; /* Gris claro */
+    color: #333; /* Gris oscuro */
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor principal */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Encabezado */
+header {
+    background-color: #333; /* Gris oscuro */
+    color: #fff; /* Blanco */
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+/* Navegación */
+nav {
+    background-color: #444; /* Gris intermedio */
+    color: #fff; /* Blanco */
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav a {
+    color: #fff; /* Blanco */
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Sección principal */
+main {
+    background-color: #fff; /* Blanco */
+    color: #333; /* Gris oscuro */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+/* Artículos */
+article {
+    margin-bottom: 20px;
+}
+
+article h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #444; /* Gris intermedio */
+}
+
+article p {
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Pie de página */
+footer {
+    background-color: #333; /* Gris oscuro */
+    color: #fff; /* Blanco */
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+/* Botones */
+button {
+    background-color: #444; /* Gris intermedio */
+    color: #fff; /* Blanco */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #555; /* Gris más oscuro */
+}
+
+aside {
+    background-color: #eee; /* Gris muy claro */
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Contenedor de las tarjetas */
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Contenedor de las tarjetas */
+.cards-container-result {
+    display: flex;
+    background-color: #fff;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Tarjeta */
+.card {
+    width: 200px;
+    height: 350px;
+    perspective: 1000px;
+}
+
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 88%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Frente de la tarjeta */
+.card-front,
+.card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Frente de la tarjeta */
+.card-front {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.card-front img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.card-front h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #333; /* Gris oscuro */
+}
+
+/* Parte trasera de la tarjeta */
+.card-back {
+    background-color: #333; /* Gris oscuro */
+    color: #fff; /* Blanco */
+    transform: rotateY(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+/* Formulario de entrada */
+.form-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    display: flex; /* Mostrar elementos en línea */
+    flex-wrap: wrap; /* Envolver elementos si no caben en una línea */
+}
+
+.form-container h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    color: #333;
+    width: 100%;
+}
+
+.form-container label {
+    flex: 0 0 100%; /* Ocupar todo el ancho en una línea */
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-container input[type="text"] {
+    flex: 0 0 100%; /* Ocupar todo el ancho en una línea */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.form-container button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    flex: 0 0 100%; /* Ocupar todo el ancho en una línea */
+}
