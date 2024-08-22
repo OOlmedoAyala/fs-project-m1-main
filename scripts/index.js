@@ -17,7 +17,7 @@ class Repository {
         const activity = new Activity(id, title, description, imgUrl);
         this.activities.push(activity);
     }
-    deleteActivitie(){
+    deleteActivity(){
         this.activities = this.activities.filter(activity => activity.id !== id);
     }
 }
